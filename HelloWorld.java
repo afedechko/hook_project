@@ -20,7 +20,9 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World, u-la-la");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Date date = new Date();
+		System.out.println(dateFormat.format(date));
     }
 
 }
